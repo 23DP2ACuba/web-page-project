@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Machine Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">AI Learning Hub</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#transformers">Transformers</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                    <li><a href="#permissions">Permissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>Artificial Intelligence & Machine Learning</h1>
+            <h2>Explore the Future of Technology</h2>
+            <p>Dive into the world of artificial intelligence and machine learning. Discover how neural networks, deep learning, and transformers are revolutionizing technology and shaping our future. Learn about cutting-edge algorithms that power everything from natural language processing to computer vision.</p>
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="AI and Machine Learning visualization" class="hero-image">
+            <div class="wiki-links">
+                <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="wiki-link">📚 Machine Learning on Wikipedia</a>
+                <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" class="wiki-link">🤖 Artificial Intelligence on Wikipedia</a>
+            </div>
+        </section>
+
+        <section class="transformers-section" id="transformers">
+            <h2>How Transformers Work</h2>
+            <div class="transformer-content">
+                <p>Transformers are a revolutionary neural network architecture introduced in 2017 that have become the foundation of modern AI systems like GPT, BERT, and Claude. Here's how they work:</p>
+                
+                <div class="transformer-steps">
+                    <div class="step">
+                        <h3>1. Self-Attention Mechanism</h3>
+                        <p>The core innovation of transformers is the self-attention mechanism. It allows the model to weigh the importance of different words in a sequence when processing each word. For example, in the sentence "The cat sat on the mat," the model learns that "cat" is closely related to "sat" and "mat."</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>2. Parallel Processing</h3>
+                        <p>Unlike older models that process text sequentially (word by word), transformers process all words simultaneously. This parallel architecture makes them much faster and more efficient, enabling training on massive datasets.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>3. Positional Encoding</h3>
+                        <p>Since transformers process all words at once, they need a way to understand word order. Positional encodings add information about each word's position in the sequence, allowing the model to understand context and grammar.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>4. Multi-Head Attention</h3>
+                        <p>Transformers use multiple attention mechanisms ("heads") in parallel, each focusing on different aspects of the relationships between words. This allows the model to capture various linguistic patterns simultaneously, from syntax to semantics.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>5. Feed-Forward Networks</h3>
+                        <p>After attention layers, the data passes through feed-forward neural networks that further process and refine the information. These layers help the model learn complex patterns and representations.</p>
+                    </div>
+                </div>
+                
+                <p class="transformer-conclusion">The combination of these components allows transformers to understand context, generate coherent text, translate languages, and perform countless other language tasks with remarkable accuracy. Their efficiency and effectiveness have made them the dominant architecture in modern AI.</p>
+                
+        </section>
+
+        <section class="applications-section" id="applications">
+                <details>
+                    <summary>Get ML Learning Roadmap!</summary>
+                    <div class="copy-box">
+                        <p class="transformer-conclusion">Copy prompt to get comprehensive ml learning roadmap</p><br>
+        
+                        <span id="text-to-copy" class="copy-text">
+                                                        Create a detailed, step-by-step roadmap for mastering machine learning from the ground up. The roadmap should cover the following:
+                            Foundational Mathematics: Linear algebra, probability, statistics, multivariable calculus, and optimization techniques (with practical connections to ML).
+                            Programming & Tools: Python, Jupyter, NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch/TensorFlow, and version control (Git).
+                            Core ML Concepts: Supervised and unsupervised learning, model evaluation, bias-variance tradeoff, overfitting/regularization, feature engineering.
+                            Deep Learning Foundations: Neural networks, activation functions, backpropagation, optimization algorithms (SGD, Adam), CNNs, RNNs, and LSTMs.
+                            Advanced Architectures: Transformers, attention mechanisms, GANs, graph neural networks, reinforcement learning basics.
+                            Modern Techniques & Topics: Transfer learning, self-supervised learning, meta-learning, few-shot learning, and large-scale training strategies.
+                            Practical Skills: Best practices for ML projects (data pipelines, reproducibility, experiment tracking, hyperparameter tuning, model deployment).
+                            Suggested Resources: Books, online courses, tutorials, papers, and projects for each stage.
+                            Milestones & Projects: Capstone projects at each level to solidify knowledge (e.g., build a spam classifier, train a CNN for image recognition, implement a Transformer for NLP).
+                            The roadmap should be structured in progressive stages (beginner → intermediate → advanced), with clear prerequisites, timelines, and recommended project ideas.
+                        </span>
+                        <button class="copy-btn" onclick="copyText()">Copy</button>
+                    </div>
+                    
+                    <iframe src="https://chatgpt.com/?model=auto"></iframe>
+                </details>
+            </div>
+        </section>
+
+        <section class="applications-section" id="applications">
+            <h2>AI & ML Applications</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://www.shaip.com/wp-content/uploads/2022/10/Blog-What-is-NLP.jpg" alt="Natural Language Processing" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Natural Language Processing</h3>
+                        <p class="card-description">Transform how machines understand and generate human language through advanced NLP techniques, powering chatbots, translation, and content generation.</p>
+                        <a class="card-button-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjg2Nj_g4GQAxXCIhAIHYThFHIQFnoECBcQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNatural_language_processing&usg=AOvVaw1KDOCNufwMWaoNt_JWX4QL&opi=89978449" target="_blank" class="wiki-link">
+                            <button class="card-button">Explore NLP</button>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.rishabhsoft.com/wp-content/uploads/2023/04/Blog-Banner-Computer-Vision.jpg" alt="Computer Vision" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Computer Vision</h3>
+                        <p class="card-description">Enable machines to see and interpret visual information, from facial recognition to autonomous vehicles and medical image analysis.</p>
+                        <a class="card-button-link" href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" class="wiki-link">
+                            <button class="card-button">Discover Computer Vision</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Predictive Analytics" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Predictive Analytics</h3>
+                        <p class="card-description">Leverage machine learning algorithms to forecast trends, optimize decisions, and gain actionable insights from complex data patterns.</p>
+                        <a class="card-button-link" href="https://www.future-forecasting.de/en/wiki" target="Recommended for beginners: Forecasting, Classification, Regression" class="forecasting-wiki-link">
+                            <button class="card-button" target="Recommended for beginners: Forecasting, Classification, Regression">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="permissions-section" id="permissions">
+            <h2>User Permissions & Data Privacy</h2>
+            <div class="permissions-content">
+                <p>Your privacy and control over your data are our top priorities. Here's what permissions you can manage:</p>
+                
+                <div class="permission-item">
+                    <div class="permission-header">
+                        <h3>🔒 Data Collection</h3>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dataCollection" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>Allow us to collect anonymized usage data to improve our AI models and user experience. You can opt out at any time.</p>
+                </div>
+                
+                <div class="permission-item">
+                    <div class="permission-header">
+                        <h3>🔔 Notifications</h3>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="notifications">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>Receive updates about new AI features, research breakthroughs, and educational content tailored to your interests.</p>
+                </div>
+                
+                <div class="permission-item">
+                    <div class="permission-header">
+                        <h3>📊 Personalization</h3>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="personalization" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>Enable personalized content recommendations and learning paths based on your interaction history and preferences.</p>
+                </div>
+                
+                <div class="permission-item">
+                    <div class="permission-header">
+                        <h3>🤝 Third-Party Integrations</h3>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="thirdParty">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>Allow integration with third-party services for enhanced functionality. We only share data with trusted partners.</p>
+                </div>
+                
+                <button class="save-permissions-btn">Save Preferences</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>AI Learning Hub</h3>
+            <p>Empowering the next generation of AI enthusiasts and practitioners</p>
+            <div class="social-links">
+                <a href="https://github.com/23DP2ACuba/web-page-project">GitHub</a>
+                <a href="#X">X</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#discord">Discord</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#research">Research Papers</a>
+                <a href="#blog">Blog</a>
+            </div>
+            <p>&copy; 2025 AI Learning Hub. All rights reserved.</p>
+            <p>Contact: info@ailearninghub.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
